@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --stem-blue: rgb(37, 108, 250);
+  --stem-yellow: rgb(255, 250, 97);
 }
 
 @theme inline {
@@ -23,4 +25,172 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.stem-blue-bg {
+  background-color: var(--stem-blue);
+}
+
+.stem-yellow-bg {
+  background-color: var(--stem-yellow);
+}
+
+.stem-blue-text {
+  color: var(--stem-blue);
+}
+
+.stem-yellow-text {
+  color: var(--stem-yellow);
+}
+
+/* Animation classes for page transitions */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.7s ease-in-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.7s ease-in-out;
+}
+
+.animate-slide-in-top {
+  animation: slideInTop 0.7s ease-in-out;
+}
+
+.animate-slide-in-bottom {
+  animation: slideInBottom 0.7s ease-in-out;
+}
+
+/* Animation delays */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+/* Animation for slow spinning */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 15s linear infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Pulse glow animation */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 5px 0 rgba(37, 108, 250, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(37, 108, 250, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 5px 0 rgba(37, 108, 250, 0.3);
+  }
+}
+
+.animate-glow {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Scale animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out;
 }
