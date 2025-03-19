@@ -6,7 +6,11 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">MalaySTEM</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              <span className="text-[rgb(255,250,97)]">M</span>
+              <span className="text-[rgb(37,108,250)] filter drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">Y</span>
+              <span className="text-red-500 text-xl">stem</span>
+            </h3>
             <p className="mb-6 max-w-md">
               Empowering Malaysian students to explore and excel in Science, Technology, Engineering, and Mathematics careers.
             </p>
@@ -109,7 +113,7 @@ export default function Footer() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span className="text-black">info@malaystem.org</span>
+                <span className="text-black">info@mystem.org</span>
               </li>
               <li className="flex items-center space-x-3">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -124,7 +128,10 @@ export default function Footer() {
         <div className="border-t border-blue-400 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-black text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} MalaySTEM. All rights reserved.
+              &copy; {new Date().getFullYear()} 
+              <span className="text-[rgb(255,250,97)]">M</span>
+              <span className="text-[rgb(37,108,250)] filter drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">Y</span>
+              <span className="text-red-500 text-sm">stem</span>. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link href="#" className="text-black hover:text-[rgb(255,250,97)] text-sm transition-colors">

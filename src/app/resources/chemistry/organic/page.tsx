@@ -314,7 +314,7 @@ export default function OrganicChemistryPage() {
                         Difficulty: {resource.difficulty}/10
                       </span>
                     </div>
-                    <p className="text-sm text-gray-500 mb-2">{resource.type} {resource.duration && `• ${resource.duration}`}</p>
+                    <p className="text-sm text-black mb-2">{resource.type} {resource.duration && `• ${resource.duration}`}</p>
                     <p className="text-sm text-black">{resource.description}</p>
                   </a>
                 ))}
@@ -345,7 +345,7 @@ export default function OrganicChemistryPage() {
                         Difficulty: {resource.difficulty}/10
                       </span>
                     </div>
-                    <p className="text-sm text-gray-500 mb-2">{resource.type} {resource.duration && `• ${resource.duration}`}</p>
+                    <p className="text-sm text-black mb-2">{resource.type} {resource.duration && `• ${resource.duration}`}</p>
                     <p className="text-sm text-black">{resource.description}</p>
                   </a>
                 ))}
@@ -376,7 +376,7 @@ export default function OrganicChemistryPage() {
                         Difficulty: {resource.difficulty}/10
                       </span>
                     </div>
-                    <p className="text-sm text-gray-500 mb-2">{resource.type} {resource.duration && `• ${resource.duration}`}</p>
+                    <p className="text-sm text-black mb-2">{resource.type} {resource.duration && `• ${resource.duration}`}</p>
                     <p className="text-sm text-black">{resource.description}</p>
                   </a>
                 ))}

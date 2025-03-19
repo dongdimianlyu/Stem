@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MalaySTEM - Empowering Malaysian Students in STEM",
-  description: "MalaySTEM is dedicated to providing quality STEM education to low-income students in Malaysia.",
+  title: "MYstem - Empowering Malaysian Students in STEM",
+  description: "MYstem is dedicated to providing quality STEM education to low-income students in Malaysia.",
 };
 
 export default function RootLayout({

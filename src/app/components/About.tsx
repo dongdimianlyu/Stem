@@ -6,7 +6,11 @@ export default function About() {
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[rgb(37,108,250)] mb-4">About MalaySTEM</h2>
+          <h2 className="text-4xl font-bold text-[rgb(37,108,250)] mb-4">About 
+            <span className="text-[rgb(255,250,97)]">M</span>
+            <span className="text-[rgb(37,108,250)] filter drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">Y</span>
+            <span className="text-red-500 text-3xl">stem</span>
+          </h2>
           <p className="text-lg text-black max-w-3xl mx-auto">
             Empowering low-income Malaysian students to discover their passion for Science, Technology, Engineering, and Mathematics.
           </p>
@@ -15,8 +19,12 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h3 className="text-2xl font-semibold mb-4 text-[rgb(37,108,250)]">Our Mission</h3>
-            <p className="text-black mb-6">
-              At MalaySTEM, we believe that every student deserves access to quality STEM education, regardless of their economic background. 
+            <p className="text-lg mb-6 leading-relaxed text-black">
+              At <span className="font-bold">
+                <span className="text-[rgb(255,250,97)]">M</span>
+                <span className="text-[rgb(37,108,250)] filter drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">Y</span>
+                <span className="text-red-500 text-base">stem</span>
+              </span>, we believe that every student deserves access to quality STEM education, regardless of their economic background. 
               Our mission is to break down barriers to STEM careers for low-income students in Malaysia by providing them with the resources, 
               guidance, and opportunities they need to succeed.
             </p>

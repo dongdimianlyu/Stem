@@ -4,8 +4,14 @@ export default function Header() {
   return (
     <header className="w-full bg-[rgb(37,108,250)] text-white py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <div className="flex items-center">
-          <h1 className="text-2xl font-bold">MalaySTEM</h1>
+        <div className="flex items-center space-x-4">
+          <Link href="/">
+            <h1 className="text-2xl font-bold">
+              <span className="text-[rgb(255,250,97)]">M</span>
+              <span className="text-[rgb(37,108,250)] filter drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">Y</span>
+              <span className="text-red-500 text-xl">stem</span>
+            </h1>
+          </Link>
         </div>
         <nav className="hidden md:flex space-x-8">
           <Link href="#about" className="hover:text-[rgb(255,250,97)] transition-colors">

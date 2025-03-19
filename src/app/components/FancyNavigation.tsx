@@ -51,18 +51,17 @@ export default function FancyNavigation() {
           'animate-slide-in-bottom'
         }`}>
           <div className="flex items-center justify-center h-full">
-            <div className="text-black text-5xl font-bold animate-float">
-              <span className="inline-block animate-fade-in">S</span>
-              <span className="inline-block animate-fade-in" style={{ animationDelay: "100ms" }}>T</span>
-              <span className="inline-block animate-fade-in" style={{ animationDelay: "200ms" }}>E</span>
-              <span className="inline-block animate-fade-in" style={{ animationDelay: "300ms" }}>M</span>
+            <div className="text-white text-5xl font-bold">
+              <span className="text-[rgb(255,250,97)] animate-bounce">M</span>
+              <span className="text-[rgb(37,108,250)] filter drop-shadow-[0_0_12px_rgba(255,255,255,0.9)] animate-bounce" style={{ animationDelay: "150ms" }}>Y</span>
+              <span className="text-red-500 text-4xl ml-1 animate-bounce" style={{ animationDelay: "300ms" }}>stem</span>
             </div>
           </div>
         </div>
       )}
 
       {/* Navigation bar */}
-      <header className="fixed w-full bg-[rgb(37,108,250)] text-black py-4 z-40 shadow-lg">
+      <header className="fixed w-full bg-[rgb(37,108,250)] text-white py-4 z-40 shadow-lg">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center">
             <Link 
@@ -70,7 +69,9 @@ export default function FancyNavigation() {
               className="text-2xl font-bold hover:text-[rgb(255,250,97)] transition-colors"
               onClick={() => handleNavigate('/')}
             >
-              MalaySTEM
+              <span className="text-[rgb(255,250,97)]">M</span>
+              <span className="text-[rgb(37,108,250)] filter drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">Y</span>
+              <span className="text-red-500 text-xl">stem</span>
             </Link>
           </div>
           
@@ -102,6 +103,13 @@ export default function FancyNavigation() {
               onClick={() => handleNavigate('/counselor')}
             >
               AI Counselor
+            </Link>
+            <Link 
+              href="/community" 
+              className={`transition-colors ${pathname === '/community' ? 'text-[rgb(255,250,97)]' : 'hover:text-[rgb(255,250,97)]'}`}
+              onClick={() => handleNavigate('/community')}
+            >
+              Community
             </Link>
             <Link 
               href="/resources" 
@@ -161,6 +169,13 @@ export default function FancyNavigation() {
                 onClick={() => handleNavigate('/counselor')}
               >
                 AI Counselor
+              </Link>
+              <Link 
+                href="/community" 
+                className={`transition-colors py-2 text-black ${pathname === '/community' ? 'text-[rgb(255,250,97)]' : 'hover:text-[rgb(255,250,97)]'}`}
+                onClick={() => handleNavigate('/community')}
+              >
+                Community
               </Link>
               <Link 
                 href="/resources" 

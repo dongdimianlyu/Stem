@@ -627,7 +627,7 @@ export default function CareerPathSection() {
             className={`px-6 py-3 mx-2 mb-2 rounded-full font-bold transition-colors ${
               selectedCategory === 'technology' 
                 ? 'bg-[rgb(37,108,250)] text-white' 
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                : 'bg-white text-black hover:bg-blue-50'
             }`}
           >
             Technology
@@ -637,7 +637,7 @@ export default function CareerPathSection() {
             className={`px-6 py-3 mx-2 mb-2 rounded-full font-bold transition-colors ${
               selectedCategory === 'science' 
                 ? 'bg-[rgb(37,108,250)] text-white' 
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                : 'bg-white text-black hover:bg-blue-50'
             }`}
           >
             Science
@@ -647,7 +647,7 @@ export default function CareerPathSection() {
             className={`px-6 py-3 mx-2 mb-2 rounded-full font-bold transition-colors ${
               selectedCategory === 'engineering' 
                 ? 'bg-[rgb(37,108,250)] text-white' 
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                : 'bg-white text-black hover:bg-blue-50'
             }`}
           >
             Engineering
@@ -657,7 +657,7 @@ export default function CareerPathSection() {
             className={`px-6 py-3 mx-2 mb-2 rounded-full font-bold transition-colors ${
               selectedCategory === 'mathematics' 
                 ? 'bg-[rgb(37,108,250)] text-white' 
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                : 'bg-white text-black hover:bg-blue-50'
             }`}
           >
             Mathematics
@@ -775,7 +775,7 @@ export default function CareerPathSection() {
                   href="/counselor"
                   className="px-8 py-3 bg-[rgb(37,108,250)] text-white font-bold rounded-full inline-block hover:bg-blue-600 transition-colors"
                 >
-                  Get Personalized Subject Guidance
+                  Get Personalized Career Guidance
                 </Link>
               </div>
             </div>
@@ -788,7 +788,7 @@ export default function CareerPathSection() {
               href="/counselor"
               className="px-8 py-3 bg-[rgb(37,108,250)] text-white font-bold rounded-full inline-block hover:bg-blue-600 transition-colors"
             >
-              Get Personalized Subject Guidance
+              Get Personalized Career Guidance
             </Link>
           </div>
         )}

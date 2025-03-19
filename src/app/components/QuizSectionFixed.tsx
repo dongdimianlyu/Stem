@@ -14,7 +14,7 @@ export default function QuizSection() {
             <h2 className="text-4xl font-bold text-[rgb(37,108,250)] mb-6">Discover Your STEM Passion</h2>
             <div className="bg-[rgb(255,250,97)] h-1 w-24 mx-auto mb-10"></div>
             
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg text-black mb-8">
               Our free interactive quiz is designed to help you identify which areas of STEM align best with your natural 
               interests, skills, and learning style. By answering just 15 questions, you'll gain valuable insights into 
               the STEM fields where you're most likely to thrive and maintain long-term passion.
@@ -267,7 +267,7 @@ function Quiz() {
           <div className="mb-6">
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-2xl font-bold text-[rgb(37,108,250)]">STEM Interest Quiz</h3>
-              <span className="text-gray-500">Question {currentQuestion + 1} of {questions.length}</span>
+              <span className="text-black font-medium">Question {currentQuestion + 1} of {questions.length}</span>
             </div>
             <div className="w-full bg-gray-200 h-2 rounded-full">
               <div 
@@ -295,7 +295,7 @@ function Quiz() {
         <div className="bg-white rounded-xl shadow-lg p-8">
           <h3 className="text-3xl font-bold text-center text-[rgb(37,108,250)] mb-6">Your STEM Interest Profile</h3>
           
-          <p className="text-gray-600 text-center mb-8">
+          <p className="text-black text-center mb-8">
             Based on your responses, here are the STEM fields where you're most likely to maintain your passion and excel:
           </p>
           
@@ -355,7 +355,7 @@ function Quiz() {
           
           <div className="text-center">
             <h4 className="text-xl font-semibold mb-4">What's Next?</h4>
-            <p className="text-gray-600 mb-6">
+            <p className="text-black mb-6">
               Now that you know your interests, speak with our AI counselor to learn more about specific careers, 
               educational pathways, and opportunities in Malaysia related to your top fields.
             </p>

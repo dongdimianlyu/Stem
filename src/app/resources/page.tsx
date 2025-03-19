@@ -36,7 +36,7 @@ const ResourceCard = ({ title, description, icon, href, isActive }: ResourceCard
           <h3 className="text-xl font-semibold text-center mb-4 text-[rgb(37,108,250)]">{title}</h3>
           <p className="text-black text-center">{description}</p>
           <div className="mt-4 text-center">
-            <span className="inline-block px-4 py-2 bg-gray-300 text-gray-600 rounded-full text-sm">
+            <span className="inline-block px-4 py-2 bg-blue-100 text-black rounded-full text-sm">
               Coming Soon
             </span>
           </div>
